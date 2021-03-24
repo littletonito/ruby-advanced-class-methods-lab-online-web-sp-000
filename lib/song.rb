@@ -50,18 +50,8 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    file = filename.chomp("mp3").split("-")
-    info = file.collect do |j|
-      data = j.split(", ")
-      artist = data[0]
-      song_name = data [1]
+    file = filename.chomp("mp3").split(" - ")
 
-      song = Song.new
-      song.artist = artist
-      song.song_name = song_name
-      song
-    end
-    info
   end
 
 
