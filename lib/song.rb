@@ -49,7 +49,7 @@ class Song
     end
   end
 
-  def self.new_from_filename(filename)    #Class constructor is a method that does the function AND it instanciates a new instance 
+  def self.new_from_filename(filename)    #Class constructor is a method that does the function AND it instanciates a new instance
     file = filename.chomp(".mp3").split(" - ")
     artist_name = file[0]
     song_name = file[1]
@@ -59,9 +59,9 @@ class Song
     song.artist_name = artist_name
     song
   end
-  
+
   def self.create_from_filename
-    
+
   end
 
   def self.destroy_all
