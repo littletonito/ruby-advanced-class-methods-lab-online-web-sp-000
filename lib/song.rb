@@ -55,8 +55,8 @@ class Song
     song_name = file[1]
 
     song = Song.new
-    artist.name = artist
-    song_name.name = song_name
+    song.artist = artist
+    song.song_name = song_name
   end
 
 
