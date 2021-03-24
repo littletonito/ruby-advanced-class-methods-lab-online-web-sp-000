@@ -65,7 +65,9 @@ class Song
     artist_name = file[0]
     song_name = file[1]
 
-    song = self.create 
+    song = self.create #instead of Song.new we do Song.create which is calling the self.create method that
+    #already does the function we need it to do, which is SAVING the song instance 
+
     song.name = song_name
     song.artist_name = artist_name
     song
