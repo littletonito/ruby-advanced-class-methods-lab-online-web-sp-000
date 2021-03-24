@@ -55,7 +55,7 @@ class Song
     song_name = file[1]
 
     song = self.new
-    song.name = song_name
+    song.song_name = song_name
     song.artist_name = artist_name
     song
   end
